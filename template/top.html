@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block header %}誰と相性がいいのだろうか？{% endblock %}
+
+{% block content %}
+    <h2>ソウルナンバー相性ランキング</h2>
+    <!-- マクロをインポート -->
+    {% from "_formhelpers.html" import render_field %}
+    <div class="mb-3">
+        <form method="POST" novalidate>
+            {{ render_field(form.birthday) }}
+            {{ form.submit }}
+        </form>
+    </div>
+    <hr>
+    <h2>六星占術相性ランキング</h2>
+    ※現在作成中。。。。
+
+    <p><a href="{{url_for('compatibility_soul')}}">相性ランキング（ソウルナンバー）</a></p>
+    <p><a href="{{url_for("compatibility_six_stars")}}">相性ランキング（六星占術）</a></p>
+    <hr>
+    <h3>更新履歴</h3>
+    <p>
+        <table class="table">
+            <thead>
+               <tr><th scope="col">日付</th><th>更新内容</th><th>version</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">2023/10/09</th>
+                    <td>ソウルナンバー相性ランキング作成完了</td>
+                    <td>0.0.1</td>
+                </tr>
+            </tbody>
+        </table>
+    </p>
+{% endblock %}
+
+{% block footer %}{% endblock %}
