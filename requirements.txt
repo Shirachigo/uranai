@@ -1,0 +1,10 @@
+Flask
+WTForms
+email-validator
+Flask-WTF
+SQLAlchemy
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-Login
+wikipedia-api
+Flask-JWT-Extended
