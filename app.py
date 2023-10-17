@@ -40,4 +40,4 @@ def compatibility_six_stars():
     return render_template('compatibility_six_stars.html')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5000, debug=True)
