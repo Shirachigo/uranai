@@ -39,4 +39,5 @@ def soulno_01():
 def compatibility_six_stars():
     return render_template('compatibility_six_stars.html')
 
-app.run(port=5000, debug=True)
+if __name__ == '__main__':
+    app.run()
